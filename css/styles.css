@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+body {
+    background-image: url('../img/hojas.jpg');
+    background-attachment: fixed;
+}
+
+#global {
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#logo {
+    width: 385px;
+    height: 80px;
+    line-height: 80px;
+    font-family: Verdana, Arial;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    background-color: #235e3d;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+
+#menu {
+    font-family: Helvetica, Arial;
+    background-color: #333;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#menu ul {
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li {
+    height: 46px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+#menu li:hover {
+    background-color: #235e3d;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#posts {
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+.post {
+    padding: 7px;
+}
+
+.post h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.post .date {
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post p {
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-more {
+    display: block;
+    background-color: #235e3d;
+    color: white;
+    width: 75px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
