@@ -175,3 +175,12 @@ body {
     margin: 0px auto;
     margin-top: 20px;
 }
+
+.bx-wrapper, .bx-viewport {
+    max-width: 100% !important;
+    height: 250px !important;
+}
+
+.bx-wrapper img {
+    max-width: none !important;
+}
