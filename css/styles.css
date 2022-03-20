@@ -8,11 +8,6 @@
     clear: both;
 }
 
-body {
-    background-image: url('../img/hojas.jpg');
-    background-attachment: fixed;
-}
-
 #global {
     width: 65%;
     margin: 0px auto;
@@ -31,7 +26,6 @@ body {
     letter-spacing: 4px;
     color: white;
     text-align: center;
-    background-color: #235e3d;
     margin-bottom: 20px;
     float: left;
     text-transform: uppercase;
@@ -55,10 +49,6 @@ body {
     display: inline-block;
     text-decoration: none;
     transition: all 300ms;
-}
-
-#menu li:hover {
-    background-color: #235e3d;
 }
 
 #menu a {
@@ -99,7 +89,6 @@ body {
 
 .button-more {
     display: block;
-    background-color: #235e3d;
     color: white;
     width: 75px;
     height: 35px;
@@ -183,4 +172,37 @@ body {
 
 .bx-wrapper img {
     max-width: none !important;
+}
+
+#selector-theme {
+    position: fixed;
+    top: 42%;
+    background-color: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#theme-green,
+#theme-red,
+#theme-blue {
+    display: block;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#theme-green {
+    background-color: #235e3d;
+}
+
+#theme-red {
+    background-color: #ca3413;
+}
+
+#theme-blue {
+    background-color: #1f87c3;
 }
