@@ -182,9 +182,9 @@
     height: 100px;
 }
 
-#theme-green,
-#theme-red,
-#theme-blue {
+#to-green,
+#to-red,
+#to-blue {
     display: block;
     border: 1px solid white;
     width: 25px;
@@ -195,14 +195,14 @@
     cursor: pointer;
 }
 
-#theme-green {
+#to-green {
     background-color: #235e3d;
 }
 
-#theme-red {
+#to-red {
     background-color: #ca3413;
 }
 
-#theme-blue {
+#to-blue {
     background-color: #1f87c3;
 }

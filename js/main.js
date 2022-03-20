@@ -42,14 +42,38 @@ $(document).ready(function () {
 
   // Selector theme
   var theme = $('#theme');
-  $('#theme-green').click(function() {
+
+  $('#to-green').click(function() {
     theme.attr('href', 'css/green.css');
+    localStorage.removeItem('red');
+    localStorage.removeItem('blue');
+    localStorage.setItem('theme', 'green');
   });
-  $('#theme-red').click(function() {
+  $('#to-red').click(function() {
     theme.attr('href', 'css/red.css');
+    localStorage.removeItem('green');
+    localStorage.removeItem('blue');
+    localStorage.setItem('theme', 'red');
   });
-  $('#theme-blue').click(function() {
+  $('#to-blue').click(function() {
     theme.attr('href', 'css/blue.css');
+    localStorage.removeItem('green');
+    localStorage.removeItem('red');
+    localStorage.setItem('theme', 'blue');
   });
 
+ 
+  var consult_theme = localStorage.getItem('theme');
+  if(consult_theme == 'green') {
+    theme.attr('href', 'css/green.css');
+  }
+  else if(consult_theme == 'red') {
+    theme.attr('href', 'css/red.css');
+  }
+  else {
+    theme.attr('href', 'css/blue.css');
+  }
+  
+
+  
 });
