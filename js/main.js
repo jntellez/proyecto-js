@@ -74,6 +74,53 @@ $(document).ready(function () {
     theme.attr('href', 'css/blue.css');
   }
   
+  // Scroll top
+  $('.scroll-top').click(function(e) {
+    e.preventDefault();
 
+    $('html, body').animate({scrollTop: 0}, 500);
+    return false;
+  });
   
+  $('#login form').submit(function() {
+    var form_name = $('#form_name').val();
+    localStorage.setItem('user_name', form_name);
+  });
+
+  var user_name = localStorage.getItem('user_name');
+  var user_info = $('#user_info');
+
+  user_info.hover(displayMenu, hideMenu);
+
+  function displayMenu() {
+    user_info.append(menu);
+  }
+
+  function hideMenu() {
+    user_info.hide();
+    user_info.html('<span>U</span><a href="#">'+user_name+'</a>').show();
+  }
+
+  if(typeof user_name == 'string' && user_name != '') {
+    user_info.html('<span>U</span><a href="#">'+user_name+'</a>');
+
+    var menu = `
+    <ul class="display_menu">
+      <li><a href="#">Mi cuenta</a></li>
+      <li><a href="#">Privacidad</a></li>
+      <li><a href="#">Preguntas</a></li>
+      <li><a id="logout" href="#">Cerrar sesion</a></li>
+    </ul>
+    `;
+
+    $('#login').hide();
+
+    $('#logout').click(function() {
+      localStorage.clear();
+      location.reload();
+      console.log('salir');
+    });
+    
+  }
+
 });
