@@ -13,12 +13,14 @@
     <!-- jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
-    <!-- Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.13.1/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.13.1/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.13.1/jquery-ui.theme.min.css" />
+    <script type="text/javascript" src="js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
 
-    <!-- Moment -->
-    <script type="text/javascript" src="js/moment.min.js"></script>
+    <!-- Form Validator -->
+    <script src="js/jquery.form-validator.min.js"></script>
 
     <!-- Scripts -->
     <script src="js/main.js" type="text/javascript"></script>
@@ -50,17 +52,33 @@
             </nav>
         </header>
 
-        <div id="slider">
-            <div class="slider">
-                <div><img src="img/rojo.jpg" title="Funky roots"></div>
-                <div><img src="img/hojas.jpg" title="The long and winding road"></div>
-                <div><img src="img/cielo.jpg" title="Happy trees"></div>
-            </div>
-        </div>
-
         <section id="content">
-            <div id="posts">
+            <div id="box">
+                <h2>Contacto</h2>
+                <form action="" method="post" id="form_contact">
+                    <label for="name-two">Nombre:</label>
+                    <input type="text" name="name-two" id="name-two" data-validation="alphanumeric"/>
 
+                    <label for="surname">Apellidos:</label>
+                    <input type="text" name="surname" id="surname" data-validation="alphanumeric"/>
+
+                    <label for="email-two">Email:</label>
+                    <input type="email" name="email-two" id="email-two" data-validation="email"/>
+
+                    <label for="sex">Sexo:</label>
+                    <select id="date" data-validation="required">
+                        <option value="man">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="date-form">Fecha de nacimiento:</label>
+                    <input type="text" name="date" id="date-form" data-validation="date" data-validation-format="dd-mm-yyyy"/>
+
+                    <label for="age">Edad:</label>
+                    <input type="number" name="age" id="age" />
+
+                    <input type="submit" value="Enviar" />
+                </form>
             </div>
 
             <aside id="sidebar">

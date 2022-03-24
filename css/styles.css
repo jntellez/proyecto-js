@@ -69,7 +69,8 @@
     padding: 7px;
 }
 
-.post h2 {
+h2 {
+    font-family: Helvetica, Arial;
     font-size: 30px;
     color: #333;
 }
@@ -130,9 +131,11 @@
     text-align: justify;
 }
 
-#login form input[type="text"],
-#login form input[type="email"],
-#login form input[type="password"] {
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+select {
     display: block;
     width: 80%;
     padding: 5px;
@@ -140,9 +143,10 @@
     border: 1px solid #ccc;
     margin-top: 5px;
     margin-bottom: 10px;
+    color: #555;
 }
 
-#login form input[type="submit"] {
+form input[type="submit"] {
     padding: 8px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -151,7 +155,7 @@
     cursor: pointer;
 }
 
-#login form input[type="submit"]:hover {
+form input[type="submit"]:hover {
     background-color: #e5e5e5;
 }
 
@@ -277,4 +281,70 @@
 
 #logout a {
     display: block;
+}
+
+#box {
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#acordeon {
+    margin-top: 20px;
+}
+
+#watch {
+    font-size: 40px;
+    font-family: Helvetica, Arial;
+    font-weight: bold;
+    color: #333;
+    border: 5px dashed #333;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+label {
+    display: block;
+    font-family: Helvetica, Arial;
+    margin-top: 5px;
+
+}
+
+#form_contact {
+    display: block;
+    margin-top: 20px;
+    width: 50%;
+
+}
+
+select {
+    width: 83%;
+}
+
+#form_contact input[type="submit"] {
+    margin-top: 10px;
+}
+
+.help-block, .form-error {
+    background: red;
+    color: white;
+    font-family: Helvetica, Arial;
+    font-size: 12px;
+    padding: 8px;
+    width: 58%;
+    display: block;
+    float: right;
+    margin-right: 62px;
+    margin-top: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+select:focus {
+    color: black;
 }

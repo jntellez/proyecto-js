@@ -1,44 +1,49 @@
 $(document).ready(function () {
 
   // Slider
-  $('.slider').bxSlider({
-    mode: 'fade',
-    captions: true,
-    slideWidth: 600
-  });
+  if(window.location.href.indexOf('index') > -1) {
+    $('.slider').bxSlider({
+      mode: 'fade',
+      captions: true,
+      slideWidth: 600
+    });
+  }
 
   // Posts dinamicos
-  var posts = [
-    {
-      title: 'Prueba de titulo 1',
-      date: moment().format('LL'),
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus sapien. Nam efficitur arcu quis nisi tristique, eget lobortis diam fringilla.Interdum et malesuada fames ac ante ipsum primis in faucibus.Sed maximus congue condimentum.Ut quis ex non dolor egestas commodo sit amet non leo.Pellentesque faucibus ex in mollis viverra.Morbi nec ligula at sapien egestas lobortis ac eu leo.Suspendisse interdum, tellus in congue interdum, mauris leo ornare elit, eget finibus tortor lectus id eros.Ut risus libero, faucibus eget massa finibus, luctus consequat nisi.Donec orci nulla, vulputate id libero id, tempus ultrices mauris.Integer tempor, eros sed consequat interdum, enim odio efficitur nunc, nec pretium quam purus eu tellus. Praesent ac eros sagittis, condimentum nulla in, luctus nibh.Praesent efficitur est ac magna fringilla lobortis.Duis non odio erat. Aliquam tempor commodo lorem, fringilla sagittis est fermentum sed.Aenean id lobortis ante. Nullam suscipit euismod erat vitae consectetur.Proin sodales sem a consequat blandit.Aliquam in leo euismod, dignissim sem non, placerat odio.Praesent fermentum nulla non mi ultricies, eget consequat elit laoreet.'
-    },
-    {
-      title: 'Prueba de titulo 2',
-      date: moment().format('LL'),
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus sapien. Nam efficitur arcu quis nisi tristique, eget lobortis diam fringilla.Interdum et malesuada fames ac ante ipsum primis in faucibus.Sed maximus congue condimentum.Ut quis ex non dolor egestas commodo sit amet non leo.Pellentesque faucibus ex in mollis viverra.Morbi nec ligula at sapien egestas lobortis ac eu leo.Suspendisse interdum, tellus in congue interdum, mauris leo ornare elit, eget finibus tortor lectus id eros.Ut risus libero, faucibus eget massa finibus, luctus consequat nisi.Donec orci nulla, vulputate id libero id, tempus ultrices mauris.Integer tempor, eros sed consequat interdum, enim odio efficitur nunc, nec pretium quam purus eu tellus. Praesent ac eros sagittis, condimentum nulla in, luctus nibh.Praesent efficitur est ac magna fringilla lobortis.Duis non odio erat. Aliquam tempor commodo lorem, fringilla sagittis est fermentum sed.Aenean id lobortis ante. Nullam suscipit euismod erat vitae consectetur.Proin sodales sem a consequat blandit.Aliquam in leo euismod, dignissim sem non, placerat odio.Praesent fermentum nulla non mi ultricies, eget consequat elit laoreet.'
-    },
-    {
-      title: 'Prueba de titulo 3',
-      date: moment().format('LL'),
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus sapien. Nam efficitur arcu quis nisi tristique, eget lobortis diam fringilla.Interdum et malesuada fames ac ante ipsum primis in faucibus.Sed maximus congue condimentum.Ut quis ex non dolor egestas commodo sit amet non leo.Pellentesque faucibus ex in mollis viverra.Morbi nec ligula at sapien egestas lobortis ac eu leo.Suspendisse interdum, tellus in congue interdum, mauris leo ornare elit, eget finibus tortor lectus id eros.Ut risus libero, faucibus eget massa finibus, luctus consequat nisi.Donec orci nulla, vulputate id libero id, tempus ultrices mauris.Integer tempor, eros sed consequat interdum, enim odio efficitur nunc, nec pretium quam purus eu tellus. Praesent ac eros sagittis, condimentum nulla in, luctus nibh.Praesent efficitur est ac magna fringilla lobortis.Duis non odio erat. Aliquam tempor commodo lorem, fringilla sagittis est fermentum sed.Aenean id lobortis ante. Nullam suscipit euismod erat vitae consectetur.Proin sodales sem a consequat blandit.Aliquam in leo euismod, dignissim sem non, placerat odio.Praesent fermentum nulla non mi ultricies, eget consequat elit laoreet.'
-    }
-  ];
+  if(window.location.href.indexOf('index') > -1) {
+    var posts = [
+      {
+        title: 'Prueba de titulo 1',
+        date: moment().format('LL'),
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus sapien. Nam efficitur arcu quis nisi tristique, eget lobortis diam fringilla.Interdum et malesuada fames ac ante ipsum primis in faucibus.Sed maximus congue condimentum.Ut quis ex non dolor egestas commodo sit amet non leo.Pellentesque faucibus ex in mollis viverra.Morbi nec ligula at sapien egestas lobortis ac eu leo.Suspendisse interdum, tellus in congue interdum, mauris leo ornare elit, eget finibus tortor lectus id eros.Ut risus libero, faucibus eget massa finibus, luctus consequat nisi.Donec orci nulla, vulputate id libero id, tempus ultrices mauris.Integer tempor, eros sed consequat interdum, enim odio efficitur nunc, nec pretium quam purus eu tellus. Praesent ac eros sagittis, condimentum nulla in, luctus nibh.Praesent efficitur est ac magna fringilla lobortis.Duis non odio erat. Aliquam tempor commodo lorem, fringilla sagittis est fermentum sed.Aenean id lobortis ante.'
+      },
+      {
+        title: 'Prueba de titulo 2',
+        date: moment().format('LL'),
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus sapien. Nam efficitur arcu quis nisi tristique, eget lobortis diam fringilla.Interdum et malesuada fames ac ante ipsum primis in faucibus.Sed maximus congue condimentum.Ut quis ex non dolor egestas commodo sit amet non leo.Pellentesque faucibus ex in mollis viverra.Morbi nec ligula at sapien egestas lobortis ac eu leo.Suspendisse interdum, tellus in congue interdum, mauris leo ornare elit, eget finibus tortor lectus id eros.Ut risus libero, faucibus eget massa finibus, luctus consequat nisi.Donec orci nulla, vulputate id libero id, tempus ultrices mauris.Integer tempor, eros sed consequat interdum, enim odio efficitur nunc, nec pretium quam purus eu tellus. Praesent ac eros sagittis, condimentum nulla in, luctus nibh.Praesent efficitur est ac magna fringilla lobortis.Duis non odio erat. Aliquam tempor commodo lorem, fringilla sagittis est fermentum sed.Aenean id lobortis ante.'
+      },
+      {
+        title: 'Prueba de titulo 3',
+        date: moment().format('LL'),
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus sapien. Nam efficitur arcu quis nisi tristique, eget lobortis diam fringilla.Interdum et malesuada fames ac ante ipsum primis in faucibus.Sed maximus congue condimentum.Ut quis ex non dolor egestas commodo sit amet non leo.Pellentesque faucibus ex in mollis viverra.Morbi nec ligula at sapien egestas lobortis ac eu leo.Suspendisse interdum, tellus in congue interdum, mauris leo ornare elit, eget finibus tortor lectus id eros.Ut risus libero, faucibus eget massa finibus, luctus consequat nisi.Donec orci nulla, vulputate id libero id, tempus ultrices mauris.Integer tempor, eros sed consequat interdum, enim odio efficitur nunc, nec pretium quam purus eu tellus. Praesent ac eros sagittis, condimentum nulla in, luctus nibh.Praesent efficitur est ac magna fringilla lobortis.Duis non odio erat. Aliquam tempor commodo lorem, fringilla sagittis est fermentum sed.Aenean id lobortis ante.'
+      }
+    ];
+  
 
-  posts.forEach(function(item, index) {
-    var post = `
-      <article class="post">
-        <h2>${item.title}</h2>
-        <span class="date">${item.date}</span>
-        <p>
-            ${item.content}
-        </p>
-        <a href="#" class="button-more">Leer mas</a>
-      </article>
-    `
-    $('#posts').append(post);
-  });
+    posts.forEach(function(item, index) {
+      var post = `
+        <article class="post">
+          <h2>${item.title}</h2>
+          <span class="date">${item.date}</span>
+          <p>
+              ${item.content}
+          </p>
+          <a href="#" class="button-more">Leer mas</a>
+        </article>
+      `
+      $('#posts').append(post);
+    });
+  }
 
   // Selector theme
   var theme = $('#theme');
@@ -64,14 +69,14 @@ $(document).ready(function () {
 
  
   var consult_theme = localStorage.getItem('theme');
-  if(consult_theme == 'green') {
-    theme.attr('href', 'css/green.css');
+  if(consult_theme == 'blue') {
+    theme.attr('href', 'css/blue.css');
   }
   else if(consult_theme == 'red') {
     theme.attr('href', 'css/red.css');
   }
   else {
-    theme.attr('href', 'css/blue.css');
+    theme.attr('href', 'css/green.css');
   }
   
   // Scroll top
@@ -120,7 +125,32 @@ $(document).ready(function () {
       location.reload();
       console.log('salir');
     });
-    
+  }
+
+  // Acordeon
+  if(window.location.href.indexOf('about') > -1) {
+    $('#acordeon').accordion();
+  }
+
+  // Reloj
+  if(window.location.href.indexOf('watch') > -1) {
+    var watch = moment().format('hh:mm:ss');
+    $('#watch').html(watch);
+    setInterval(function() {
+      var watch = moment().format('hh:mm:ss');
+      $('#watch').html(watch);
+    }, 1000);
+  }
+
+  // Validacion de formulario
+  if(window.location.href.indexOf('contact') > -1) {
+    $.validate({
+      lang: 'es'
+    });
+
+    $('#date-form').datepicker({
+      dateFormat: 'dd-mm-yy'
+    });
   }
 
 });
